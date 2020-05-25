@@ -1,0 +1,211 @@
+initial: Welcome to Car119 service. I'm a support chat. How can I help you today?
+final: Goodbye.  Thank you for talking to me.
+quit: bye
+quit: goodbye
+quit: quit
+pre: dont don't
+pre: cant can't
+pre: wont won't
+pre: when what
+pre: certainly yes
+pre: were was
+pre: you're you are
+pre: i'm i am
+post: am are
+post: your my
+post: me you
+post: myself yourself
+post: yourself myself
+post: i you
+post: you I
+post: my your
+post: i'm you are
+synon: fix mess dilemma fixing
+synon: service office center
+synon: sell selling trade
+synon: help service support advice assistant
+synon: problem trouble 
+key: xnone
+	decomp: *
+    	reasmb: I do not understand. 
+    	reasmb: Please elaborate. 
+    	reasmb: Please hold.
+key: hello
+    	decomp: *
+    	reasmb: Hello, I'm a support chat. How can I help you today?
+    	reasmb: Hello, How can I help you today?
+key: hi
+    	decomp: *
+    	reasmb: goto hello
+key: help
+	decomp: help
+	reasmb: You can start conversation to buying or fixing car by typing "start".
+key: start
+	decomp: *
+	reasmb: goto want
+key: have 
+    	decomp: * have @problem *
+    	reasmb: Have you tried turning car off and back on ?
+    	reasmb: How long has (3) been a problem?
+key: problem 3
+    	decomp: *
+    	reasmb: Have you tried turning car off and back on ?
+    	reasmb: How long has (3) been a problem?
+key: with
+	decomp: * @problem with *
+	reasmb: When did you first observe (3) to be a problem?
+key: because
+    	decomp: *
+    	reasmb: Is that the real reason ?
+key: how
+	decomp: * how to *
+	reasmb: Please consult the manual for more details.
+	decomp: * how long *
+	reasmb: It will take a few minutes.
+	decomp: *
+	reasmb: You can start conversation to buying or fixing car by typing "start".
+
+key: chat
+	decomp: *
+	reasmb: You can start conversation to buying or fixing car by typing "start".
+
+key: yes
+    	decomp: *
+    	reasmb: I seem.
+    	reasmb: I understand.
+key: no
+    decomp: *
+    reasmb: Let's try it or come to Car119 service for support.
+
+key: yesterday
+    decomp: * 
+    reasmb: Okay.Please hold for staff.
+key: ago
+    decomp: *
+    reasmb: Okay. Please hold. I will call the staff.
+key: week
+    decomp: *
+    reasmb: Okay. Please hold. I will call the staff.
+
+key: time 5
+	decomp: *
+    reasmb: Working time 08.00am.to 05.00pm.
+
+key: can
+    decomp: * can * @fix *
+    reasmb: No.I can't but I will call the staff to help you.
+    decomp: * can * @help *
+    reasmb: Yes, I can How can I help you.
+ 
+key: want
+  	decomp: * want to *
+    reasmb: What would you like to have SUV or Eco car ?
+    decomp: * want suv *
+    reasmb: That is a good idea. Which color you want?
+    decomp: * want Eco *
+    reasmb: Absolutely! Which color you want?
+    decomp: *
+	reasmb: Which service do you need buying or fixing car ?
+key: sell 5
+	decomp: *
+    reasmb: Please go to the service center to evaluate the price.
+key: selling 5
+	decomp: *
+    reasmb: Please go to the service center to evaluate the price.
+key: do 10
+	decomp: do * @sell *
+    reasmb: Yes of couse. Car119 service provide a good price for customer .
+    decomp: do * @fix *
+    reasmb: Yes of couse. Car119 service provide all service .
+key: go 2
+	decomp: *
+    reasmb: The service center is at the Bangkok or call the staff.
+
+key: location 5
+	decomp: *
+    reasmb: The service center is at the Bangkok or call the staff.
+
+key: suv
+	decomp: *
+    reasmb: For SUV now we have red and black color.Which one do you want?
+key: eco
+	decomp: *
+    reasmb: For Eco car now we have only white color.Do you prefer that?
+
+key: thanks
+	decomp: *
+	reasmb: You're welcome.
+
+key: where
+	decomp: * where * @service *
+	reasmb: The service center is at the Bangkok or call the staff.
+
+
+key: fixing
+	decomp: *
+	reasmb: Please consult the manual for more details.
+
+key: fix 5
+	decomp: *
+	reasmb: What wrong with you car ?
+
+
+key: broke
+	decomp: * broke
+    reasmb: How long has (1) been broken?	
+
+key: broken
+	decomp: * broken 
+    reasmb: How long has (1) been broken?
+
+key: red
+	decomp: *
+	reasmb: Please hold for second. I will send you to next department.	
+	reasmb: Take a few minutes to next department.
+	reasmb: Wait for staff.
+
+key: black
+	decomp: *
+	reasmb: Please hold for second. I will send you to next department.	
+	reasmb: Take a few minutes to next department.
+	reasmb: Wait for staff.
+
+key: white
+	decomp: *
+	reasmb: Please hold for second. I will send you to next department.	
+	reasmb: Take a few minutes to next department.
+	reasmb: Wait for staff.
+
+key: buying
+	decomp: * buying *
+	reasmb: Apologize for (2) order. Car199 service Now has only SUV and Eco car.
+	reasmb: What would you like to have SUV or Eco car ?
+	reasmb: Car199 service now has SUV and Eco car.
+
+
+key: buying
+	decomp: * buying *
+	reasmb: Apologize for (2) order. Car199 service Now has only SUV and Eco car.
+	reasmb: What would you like to have SUV or Eco car ?
+	reasmb: Car199 service now has SUV and Eco car.
+
+key: service
+	decomp: *
+	reasmb: Best price guarantee.
+	reasmb: Efficient technician.
+
+key: call 3
+    decomp: *
+    reasmb: Please call 02-426-1230..
+
+key: telephone 4
+    decomp: *
+    reasmb: Please call 02-426-1230.
+	
+
+    
+	
+
+    
+  
+	

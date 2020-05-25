@@ -1,0 +1,7 @@
+5.1
+WNDS: WinNT 6.2.9200 () [5.1.0.19991101]
+SntF
+C1582554578200D1582565888006C1582567869970D1582568756768D1582568759310
+S11659
+20
+Tet(a) $ FrontOf(a,d)(LeftOf(a,d ) | RightOf(a,d )) $ Cube(a) Between(c,a ,d ) | Between(c,a ,e )Small(c) $ RightOf(c,a )RightOf(c,d ) $ (RightOf(b,c ) & LeftOf(b, e))Tet(e) $ ( RightOf(e,b ) % FrontOf(e,b ))Dodec(b) $ SameRow(b,d )BackOf(c,a ) & FrontOf(c,e )FrontOf(e,d ) & (Tet(e) & ~Large(e))Cube(a) | Cube(c) | Cube(e)Tet(a) $ FrontOf(a,b )Larger(b,a ) & Larger(b,e )SameSize(a,e ) & Larger(a,c ) & Larger(e,c )SameShape(d,b ) $ SameSize(d,b )Large(a) % Cube(a)Cube(b) % ~Tet(c)~Cube(e) $ (Large(b) | Large(d))(Tet(a) | Tet(c)) $ (Cube(b) | Cube(d)) Large(a) % Small(d)Large(a) % Large(e)
